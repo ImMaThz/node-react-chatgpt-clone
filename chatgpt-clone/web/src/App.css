@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #343541;
+  color: #ececf1;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.chatbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #343541;
+}
+
+.chat-log {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.empty-state {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #c5c5d2;
+}
+
+.chat-input-holder {
+  padding: 24px;
+}
+
+.chat-input-holder form {
+  display: flex;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #40414f;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.chat-input-textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 14px 16px;
+}
+
+.send-button {
+  background: transparent;
+  border: none;
+  color: #acacbe;
+  font-size: 1.2rem;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.send-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
