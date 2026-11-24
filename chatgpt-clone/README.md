@@ -25,7 +25,7 @@ web/                    → interface (React)
 
 ## Como rodar
 
-Pré-requisito: Node.js 18 ou superior e uma chave da [OpenRouter](https://openrouter.ai/keys).
+Pré-requisito: Node.js 18 ou superior e uma chave da [OpenAI](https://openai.com/pt-BR/).
 
 **1. Back-end**
 ```bash
@@ -43,24 +43,4 @@ npm install
 npm start                # http://localhost:3000
 ```
 
-## API
-
-`POST /api/prompt`
-
-```json
-{ "messages": [{ "role": "user", "content": "Olá!" }] }
-```
-ou apenas `{ "prompt": "Olá!" }`.
-
-Resposta: `{ "success": true, "data": "Olá! Como posso ajudar?" }`
-
-## Variáveis de ambiente (server/.env)
-
-| Variável | Descrição | Padrão |
-|---|---|---|
-| `OPENROUTER_API_KEY` | Sua chave da OpenRouter | — |
-| `OPENROUTER_MODEL` | Modelo usado | `openai/gpt-4o-mini` |
-| `PORT` | Porta da API | `5000` |
-| `OPENROUTER_TIMEOUT_MS` | Tempo limite da chamada | `120000` |
-
-> ⚠️ Nunca suba o arquivo `.env` para o GitHub — ele já está no `.gitignore`.
+Este projeto foi desenvolvido durante a [Formação ChatGPT for Devs da DIO](https://web.dio.me/track/formacao-chatgpt-devs), com o professor Felipe Silva Aguiar.
